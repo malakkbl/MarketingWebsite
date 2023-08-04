@@ -3,8 +3,8 @@
 /*Make the footer stick to the bottom of the page */
 body {
   min-height: 100vh;
-  font-family: 'Ubuntu', sans-serif;
-  }
+  font-family: "Ubuntu", sans-serif;
+}
 
 .custom-nav {
   display: flex;
@@ -12,8 +12,8 @@ body {
   width: 100%;
 }
 footer {
-margin-top: auto; /* pushes the footer down to the bottom of the body */
-width:100%
+  margin-top: auto; /* pushes the footer down to the bottom of the body */
+  width: 100%;
 }
 
 /*Homepage img : */
@@ -23,15 +23,46 @@ width:100%
   align-items: center;
 }
 #home_icon {
-  width: 400px; 
-  height: 250px; 
+  width: 400px;
+  height: 250px;
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
 /*Cards :*/
-.card:hover, .card:focus, .card:active {
+.card:hover,
+.card:focus,
+.card:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+/* Animated background */
+
+.animatedBackground {
+  background-image: url("/img/WaveLine.svg");
+  background-size: cover;
+  background-position:bottom;
+  background-repeat:repeat;
+  background-position-x: 50%;
+  animation-delay: 0s;
+  animation-duration: 50s;
+  animation-name: panoramic;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes panoramic {
+  0% {
+    background-position-x: 0%;
+  }
+
+  50% {
+    background-position-x: 100%;
+  }
+
+  100% {
+    background-position-x: 0%;
+  }
 }
