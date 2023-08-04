@@ -15,3 +15,16 @@ margin-top: auto; /* pushes the footer down to the bottom of the body */
 width:100%
 }
 
+/*Homepage img : */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home_icon {
+  width: 400px; 
+  height: 250px; 
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
