@@ -2,7 +2,8 @@
 
 /*Make the footer stick to the bottom of the page */
 body {
-  min-height: 100vh; /* minimum height of the body should be the full height of the viewport */
+  min-height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
   }
 
 .custom-nav {
@@ -28,3 +29,9 @@ width:100%
   margin-bottom: 50px;
 }
 
+/*Cards :*/
+.card:hover, .card:focus, .card:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
