@@ -1,6 +1,11 @@
-.custom-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+body {
+  display: flex;
+  flex-direction: column; /* makes the children of the body align vertically */
+  min-height: 100vh; /* minimum height of the body should be the full height of the viewport */
+}
+
+footer {
+  margin-top: auto; /* pushes the footer down to the bottom of the body */
+}
+
   
