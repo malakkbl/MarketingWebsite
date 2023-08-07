@@ -1,22 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Handjet&family=Roboto:wght@100&family=Ubuntu:wght@500&display=swap");
 
-/*Make the footer stick to the bottom of the page and the header to the top */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
   display: flex;
   flex-direction: column;
 }
+
 header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 10000;
 }
+
+main {
+  flex-grow: 1;
+  z-index: 200;
+  width: 100%;
+  display: flex;
+}
+
 footer {
   position: sticky;
   bottom: 0;
   z-index: 10;
-}
-main {
-  flex-grow: 1;
 }
