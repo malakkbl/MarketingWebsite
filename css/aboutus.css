@@ -29,12 +29,9 @@ footer {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
+  }
 
 /* Hover effect for text : */
-text:hover {
-  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
-}
 
 .text:hover::before, .text:hover::after {
   display: block;
@@ -43,7 +40,7 @@ text:hover {
   width: 570px;
   height: 200px;
   background: #c3bfbf;
-  border-radius: 75px;
+  border-radius: 25px;
   z-index: -1;
   animation: 3s clockwise infinite;
 }
