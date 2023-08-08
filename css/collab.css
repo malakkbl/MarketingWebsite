@@ -17,6 +17,17 @@ footer {
   bottom: 0;
   z-index: 10;
 }
-main {
-  flex-grow: 1;
+
+/*Caroussel style : */
+
+#carouselExampleIndicators {
+  width: 50%;  /* adjust to your needs */
+  height: 200px; /* adjust to your needs */
+  margin: 0 auto; /* this will center the carousel if it has a specified width */
+}
+
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
