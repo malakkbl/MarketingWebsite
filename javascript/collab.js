@@ -4,7 +4,7 @@ document.getElementById('footer-text').textContent = '©' + new Date().getFullYe
 const items = [
     {
       title: "BARAKA",
-      img: "Some Item",
+      img: "",
       price: "$100",
       category:"Nike",
     },
