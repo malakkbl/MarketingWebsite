@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GROOVING : Collaborations</title>
     <link rel="icon" href="./img/Grooving.png" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <!-- Add the Tailwind library -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+
     <link rel="stylesheet" href="/css/collab.css" />
+
   </head>
   <body>
     <header>
@@ -127,6 +130,19 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <div class="container mx-auto mt-5">
+        <!-- Buttons Container -->
+        <div class="button-container flex space-x-3 mb-5">
+            <!-- Buttons will be generated here -->
+        </div>
+    
+        <!-- Characters Container -->
+        <div id="characters-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Character cards will be generated here -->
+        </div>
+    </div>
+    
 
     </main>
 
