@@ -22,7 +22,7 @@ footer {
 
 #carouselExampleIndicators {
   width: 50%;  /* adjust to your needs */
-  height: 200px; /* adjust to your needs */
+  height: 80%; /* adjust to your needs */
   margin: 0 auto; /* this will center the carousel if it has a specified width */
 }
 
@@ -31,3 +31,4 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+
