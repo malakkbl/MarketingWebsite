@@ -131,24 +131,24 @@ const items = [
     img: "../img/Converse/converse4.jpg",
     price: "$85",
     category: "Converse",
-  },
+  }
 ];
 
 const buttonContainer = document.querySelector(".button-container");
 const itemsContainer = document.getElementById("items-container");
 
 window.onload = function () {
-  const categories = ["all", ...new Set(items.map((item) => item.category))];
+  const categories = ["All", ...new Set(items.map((item) => item.category))];
 
   categories.forEach((category) => {
     const button = document.createElement("button");
-    button.className = "btn btn-primary m-2";
+    button.className = "btn btn-secondary m-2";
     button.textContent = category;
     buttonContainer.appendChild(button);
     button.addEventListener("click", function () {
       itemsContainer.innerHTML = "";
       let itemsToDisplay;
-      if (category === "all") {
+      if (category === "All") {
         itemsToDisplay = items;
       } else {
         itemsToDisplay = items.filter((item) => item.category === category);
@@ -163,11 +163,12 @@ window.onload = function () {
 function displayItems(itemsToDisplay) {
   itemsToDisplay.forEach((item) => {
     const itemCard = document.createElement("div");
-    itemCard.className = "card m-3";
+    itemCard.className = "card m-5";
 
     const itemImage = document.createElement("img");
     itemImage.src = item.img;
     itemImage.className = "card-img-top";
+    itemImage.id="itemImg"
 
     const cardBody = document.createElement("div");
     cardBody.className = "card-body";
