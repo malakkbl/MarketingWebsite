@@ -6,25 +6,25 @@ const items = [
   // Nike items
   {
     title: "AirMax 95",
-    img: "Image URL Nike 1",
+    img: "./img/nike/nike1.jpg",
     price: "$100",
     category: "Nike",
   },
   {
     title: "React Element",
-    img: "Image URL Nike 2",
+    img: "./img/nike/nike2.jpg",
     price: "$120",
     category: "Nike",
   },
   {
     title: "Cortez Classic",
-    img: "Image URL Nike 3",
+    img: "./img/nike/nike4.jpg",
     price: "$90",
     category: "Nike",
   },
   {
     title: "Air Force 1",
-    img: "Image URL Nike 4",
+    img: "./img/nike/nike5.jpg",
     price: "$110",
     category: "Nike",
   },
@@ -32,25 +32,25 @@ const items = [
   // Adidas items
   {
     title: "Ultraboost",
-    img: "Image URL Adidas 1",
+    img: "./img/adidas/adidas1.jpg",
     price: "$140",
     category: "Adidas",
   },
   {
     title: "Yeezy Boost",
-    img: "Image URL Adidas 2",
+    img: "./img/adidas/adidas2.jpg",
     price: "$250",
     category: "Adidas",
   },
   {
     title: "Stan Smith",
-    img: "Image URL Adidas 3",
+    img: "./img/adidas/adidas4.jpg",
     price: "$80",
     category: "Adidas",
   },
   {
     title: "NMD R1",
-    img: "Image URL Adidas 4",
+    img: "./img/adidas/adidas5.jpg",
     price: "$130",
     category: "Adidas",
   },
@@ -58,25 +58,25 @@ const items = [
   // Balenciaga items
   {
     title: "Triple S",
-    img: "Image URL Balenciaga 1",
+    img: "./img/Balenciaga/b1.jpg",
     price: "$795",
     category: "Balenciaga",
   },
   {
     title: "Track Trainer",
-    img: "Image URL Balenciaga 2",
+    img: "./img/Balenciaga/b2.jpg",
     price: "$895",
     category: "Balenciaga",
   },
   {
     title: "Speed Trainer",
-    img: "Image URL Balenciaga 3",
+    img: "./img/Balenciaga/b3.jpg",
     price: "$770",
     category: "Balenciaga",
   },
   {
     title: "Tyrex Sneaker",
-    img: "Image URL Balenciaga 4",
+    img: "./img/Balenciaga/b4.jpg",
     price: "$975",
     category: "Balenciaga",
   },
@@ -84,25 +84,25 @@ const items = [
   // Supreme items
   {
     title: "Box Logo Tee",
-    img: "Image URL Supreme 1",
+    img: "./img/Supreme/supreme1.jpg",
     price: "$98",
     category: "Supreme",
   },
   {
     title: "Skateboard Deck",
-    img: "Image URL Supreme 2",
+    img: "./img/Supreme/supreme2.jpg",
     price: "$60",
     category: "Supreme",
   },
   {
     title: "Backpack",
-    img: "Image URL Supreme 3",
+    img: "./img/Supreme/supreme3.jpg",
     price: "$148",
     category: "Supreme",
   },
   {
     title: "Hoodie",
-    img: "Image URL Supreme 4",
+    img: "./img/Supreme/supreme4.jpg",
     price: "$158",
     category: "Supreme",
   },
@@ -110,25 +110,25 @@ const items = [
   // Converse items
   {
     title: "Chuck Taylor All Star",
-    img: "Image URL Converse 1",
+    img: "./img/Converse/converse1.jpg",
     price: "$55",
     category: "Converse",
   },
   {
     title: "One Star Pro",
-    img: "Image URL Converse 2",
+    img: "./img/Converse/converse2.jpg",
     price: "$75",
     category: "Converse",
   },
   {
     title: "Jack Purcell Classic",
-    img: "Image URL Converse 3",
+    img: "./img/Converse/converse3.jpg",
     price: "$65",
     category: "Converse",
   },
   {
     title: "Pro Leather",
-    img: "Image URL Converse 4",
+    img: "./img/Converse/converse4.jpg",
     price: "$85",
     category: "Converse",
   },
