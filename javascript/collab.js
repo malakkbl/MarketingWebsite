@@ -142,7 +142,7 @@ window.onload = function () {
 
   categories.forEach((category) => {
     const button = document.createElement("button");
-    button.className = "btn btn-secondary m-2";
+    button.className = "btn btn-secondary btn-lg m-2";
     button.textContent = category;
     buttonContainer.appendChild(button);
     button.addEventListener("click", function () {
