@@ -45,3 +45,25 @@ footer {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* Styling for the text container */
+.text-center.mt-5.mb-5 {
+  padding-top: 50px;
+}
+
+.text-center.mt-5.mb-5 h2 {
+  color: rgba(133, 41, 16, 0.755); 
+  letter-spacing: 25px; 
+  word-spacing: 60px;  
+  font-weight: bold;   
+  text-transform: uppercase;
+  overflow-wrap: break-word; /* Ensures text wraps if it cannot fit the screen width */
+  max-width: 100%; 
+  margin-bottom: 20px;
+}
+
+.text-center.mt-5.mb-5 p {
+  color: #7F8C8D;  
+  font-size: 1.1em; 
+  letter-spacing: 3px; 
+}
