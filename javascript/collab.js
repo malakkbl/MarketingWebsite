@@ -5,131 +5,131 @@ document.getElementById("footer-text").textContent =
 const items = [
   // Nike items
   {
-    title: "AirMax 95",
+    title: "Retro Frost",
     img: "../img/nike/nike1.jpg",
-    price: "100",
+    price: "200",
     category: "Nike",
   },
   {
-    title: "React Element",
+    title: "Azure Step",
     img: "../img/nike/nike2.jpg",
-    price: "120",
+    price: "300",
     category: "Nike",
   },
   {
-    title: "Cortez Classic",
+    title: "Sable Drift",
     img: "../img/nike/nike4.jpg",
-    price: "90",
+    price: "350",
     category: "Nike",
   },
   {
-    title: "Air Force 1",
+    title: "Winter Whisper",
     img: "../img/nike/nike5.jpg",
-    price: "$110",
+    price: "250",
     category: "Nike",
   },
 
   // Adidas items
   {
-    title: "Ultraboost",
+    title: "Emerald Echo",
     img: "../img/adidas/adidas1.jpg",
-    price: "$140",
+    price: "300",
     category: "Adidas",
   },
   {
-    title: "Yeezy Boost",
+    title: "Nautical Nights",
     img: "../img/adidas/adidas2.jpg",
-    price: "$250",
+    price: "250",
     category: "Adidas",
   },
   {
-    title: "Stan Smith",
+    title: "Yin-Yang",
     img: "../img/adidas/adidas4.jpg",
-    price: "$80",
+    price: "300",
     category: "Adidas",
   },
   {
-    title: "NMD R1",
+    title: "Desert Dusk",
     img: "../img/adidas/adidas5.jpg",
-    price: "$130",
+    price: "300",
     category: "Adidas",
   },
 
   // Balenciaga items
   {
-    title: "Triple S",
+    title: "Rebel Camo",
     img: "../img/Balenciaga/b1.jpg",
-    price: "$795",
+    price: "200",
     category: "Balenciaga",
   },
   {
-    title: "Track Trainer",
+    title: "Greyson Glyph",
     img: "../img/Balenciaga/b2.jpg",
-    price: "$895",
+    price: "200",
     category: "Balenciaga",
   },
   {
-    title: "Speed Trainer",
+    title: "Midnight Message",
     img: "../img/Balenciaga/b3.jpg",
-    price: "$770",
+    price: "200",
     category: "Balenciaga",
   },
   {
-    title: "Tyrex Sneaker",
+    title: "Noir Narrative",
     img: "../img/Balenciaga/b4.jpg",
-    price: "$975",
+    price: "250",
     category: "Balenciaga",
   },
 
   // Supreme items
   {
-    title: "Box Logo Tee",
+    title: "Starshine",
     img: "../img/Supreme/supreme1.jpg",
-    price: "$98",
+    price: "600",
     category: "Supreme",
   },
   {
-    title: "Skateboard Deck",
+    title: "Bubblegum Bliss",
     img: "../img/Supreme/supreme2.jpg",
-    price: "$60",
+    price: "550",
     category: "Supreme",
   },
   {
-    title: "Backpack",
+    title: "Denim Diaries",
     img: "../img/Supreme/supreme3.jpg",
-    price: "$148",
+    price: "400",
     category: "Supreme",
   },
   {
-    title: "Hoodie",
+    title: "Feathered Script",
     img: "../img/Supreme/supreme4.jpg",
-    price: "$158",
+    price: "400",
     category: "Supreme",
   },
 
   // Converse items
   {
-    title: "Chuck Taylor All Star",
+    title: "Shadow Chic",
     img: "../img/Converse/converse1.jpg",
-    price: "$55",
+    price: "600",
     category: "Converse",
   },
   {
-    title: "One Star Pro",
+    title: "Coastal Cruise",
     img: "../img/Converse/converse2.jpg",
-    price: "$75",
+    price: "600",
     category: "Converse",
   },
   {
-    title: "Jack Purcell Classic",
+    title: "Skyline",
     img: "../img/Converse/converse3.jpg",
-    price: "$65",
+    price: "700",
     category: "Converse",
   },
   {
-    title: "Pro Leather",
+    title: "Velvet Voyage",
     img: "../img/Converse/converse4.jpg",
-    price: "$85",
+    price: "650",
     category: "Converse",
   }
 ];
@@ -171,7 +171,7 @@ function displayItems(itemsToDisplay) {
     itemImage.id="itemImg"
 
     const cardBody = document.createElement("div");
-    cardBody.className = "card-body";
+    cardBody.className = "card-body text-center";
 
     const itemTitle = document.createElement("h5");
     itemTitle.textContent = item.title;
@@ -182,8 +182,8 @@ function displayItems(itemsToDisplay) {
     itemPrice.className = "card-text text-success";
 
     const buyButton = document.createElement("button");
-    buyButton.textContent = "Grab Yours";
-    buyButton.className = "btn btn-primary mt-2";
+    buyButton.textContent = "Grab yours";
+    buyButton.className = "btn btn-dark mt-2";
 
     cardBody.append(itemTitle, itemPrice, buyButton);
     itemCard.append(itemImage, cardBody);

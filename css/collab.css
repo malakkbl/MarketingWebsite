@@ -32,3 +32,8 @@ footer {
   object-fit: cover;
 }
 
+/*Items cards style : */
+#itemImg {
+  height: 300px;
+  width: 250px;
+}
