@@ -20,3 +20,8 @@ footer {
 main {
   flex-grow: 1;
 }
+
+/*Rows style : */
+.custom-margin-left {
+  margin-left: 2px;  /* adjust this value as needed */
+}
