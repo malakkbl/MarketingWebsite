@@ -23,7 +23,7 @@ main {
 
 /*Rows style : */
 .custom-margin-left {
-  margin-left: 2px;  /* adjust this value as needed */
+  margin-left: 2px; 
 }
 
 
@@ -48,5 +48,3 @@ main {
 .btn-ligh:hover span {
   padding-left: 10px; 
 }
-
-

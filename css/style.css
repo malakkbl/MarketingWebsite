@@ -40,7 +40,7 @@ footer {
 
 /* Animated background */
 
-.animatedBackground {
+/*.animatedBackground {
   background-image: url("/img/WaveLine.svg");
   background-size: cover;
   background-position:bottom;
@@ -65,4 +65,10 @@ footer {
   100% {
     background-position-x: 0%;
   }
+}
+
+/* Landing page style :*/
+
+.landing-page-section{
+  background-color: white;
 }
