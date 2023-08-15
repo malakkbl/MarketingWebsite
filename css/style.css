@@ -40,7 +40,7 @@ footer {
 
 /* Animated background */
 
-/*.animatedBackground {
+.animatedBackground {
   background-image: url("/img/WaveLine.svg");
   background-size: cover;
   background-position:bottom;
@@ -85,3 +85,12 @@ footer {
   border-radius: 5px;
   color: #fff;
 }
+
+/* Video style : */
+.custom-video {
+  height: 330px; 
+  border: 3px solid rgba(133, 41, 16, 0.755); 
+  display: block;
+  margin: 0 auto; /* This centers the video horizontally */
+}
+
