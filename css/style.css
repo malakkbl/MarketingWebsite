@@ -72,3 +72,16 @@ footer {
 .landing-page-section{
   background-color: white;
 }
+
+/* Countdown style : */
+#countdown {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#countdown span {
+  background-color: rgba(133, 41, 16, 0.755);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
