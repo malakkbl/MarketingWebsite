@@ -16,6 +16,7 @@ footer {
   width: 100%;
 }
 
+
 /*Homepage img : */
 .image-container {
   display: flex;
@@ -38,42 +39,12 @@ footer {
   transform: scale(1.1);
 }
 
-/* Animated background */
-
-.animatedBackground {
-  background-image: url("/img/WaveLine.svg");
-  background-size: cover;
-  background-position:bottom;
-  background-repeat:repeat;
-  background-position-x: 50%;
-  animation-delay: 0s;
-  animation-duration: 50s;
-  animation-name: panoramic;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: both;
-}
-@keyframes panoramic {
-  0% {
-    background-position-x: 0%;
-  }
-
-  50% {
-    background-position-x: 100%;
-  }
-
-  100% {
-    background-position-x: 0%;
-  }
-}
-
 /* Landing page style :*/
 
 .landing-page-section{
   background-color: white;
 }
 
-/* Countdown style : */
 #countdown {
   font-size: 2rem;
   margin-bottom: 15px;
@@ -86,11 +57,11 @@ footer {
   color: #fff;
 }
 
-/* Video style : */
 .custom-video {
   height: 330px; 
   border: 3px solid rgba(133, 41, 16, 0.755); 
+  border-radius: 20px;
   display: block;
-  margin: 0 auto; /* This centers the video horizontally */
+  margin: 0 auto; 
 }
 
