@@ -15,7 +15,6 @@ footer {
   width: 100%;
 }
 
-
 /*Homepage img : */
 .image-container {
   display: flex;
@@ -40,7 +39,7 @@ footer {
 
 /* Landing part style :*/
 
-.landing-page-section{
+.landing-page-section {
   background-color: white;
 }
 
@@ -57,10 +56,9 @@ footer {
 }
 
 .custom-video {
-  height: 330px; 
-  border: 3px solid rgba(133, 41, 16, 0.755); 
+  height: 330px;
+  border: 3px solid rgba(133, 41, 16, 0.755);
   border-radius: 20px;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
-
