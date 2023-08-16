@@ -5,7 +5,6 @@ body {
   min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
 }
-
 .custom-nav {
   display: flex;
   justify-content: center;
@@ -30,7 +29,7 @@ footer {
   margin-bottom: 50px;
 }
 
-/*Cards :*/
+/*Cards style :*/
 .card:hover,
 .card:focus,
 .card:active {
@@ -39,7 +38,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* Landing page style :*/
+/* Landing part style :*/
 
 .landing-page-section{
   background-color: white;

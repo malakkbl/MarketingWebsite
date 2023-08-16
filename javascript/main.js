@@ -12,7 +12,7 @@ image.addEventListener('mouseout', function() {
     image.src = defaultSource;
 });
 
-// Countdown :
+// COUNTDOWN :
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 31, 2023 23:59:59").getTime();
 
