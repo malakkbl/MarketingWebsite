@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GROOVING : Latest drops</title>
     <link rel="icon" href="./img/Grooving.png" />
+    <!-- Bootstrap 4.3.1 CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/css/latest.css" />
   </head>
+
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Navbar brand/logo -->
         <a class="navbar-brand" href="/index.html">
           <img
             src="/img/GroovingBlack.png"
@@ -22,22 +25,26 @@
             height="100"
           />
         </a>
+        <!-- Navbar items -->
         <div id="navbarNav">
           <ul class="navbar-nav d-flex justify-content-between w-100">
+            <!-- Home link -->
             <li class="nav-item ml-4 mr-4">
               <a class="nav-link mt-3" href="/index.html"><h5>Home</h5> </a>
             </li>
+            <!-- About us link -->
             <li class="nav-item mr-4">
               <a class="nav-link mt-3" href="/pages/about_us.html"
                 ><h5>About us</h5>
-                <span class="sr-only">(current)</span></a
-              >
+              </a>
             </li>
+            <!-- Collaborations link -->
             <li class="nav-item mr-4">
               <a class="nav-link mt-3" href="/pages/collab.html"
                 ><h5>Collaborations</h5></a
               >
             </li>
+            <!-- Latest drops link -->
             <li class="nav-item">
               <a class="nav-link mt-3" href="/pages/latest.html"
                 ><h5>Latest drops</h5></a
@@ -50,7 +57,7 @@
 
     <main>
       <!-- First row : -->
-      <div class="container mt-5">
+      <div class="container mt-4">
         <div class="row">
           <div
             class="col-md-3 d-flex justify-content-center align-items-center"
@@ -290,32 +297,30 @@
       </div>
     </main>
 
-    <footer>
-      <section class="custom-nav mt-5">
-        <footer class="text-center text-white" style="background-color: black">
-          <div class="container p-4 pb-0">
-            <!-- Section: CTA -->
-            <section class="">
-              <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3 mr-3">Register for free :</span>
-                <button type="button" class="btn btn-outline-light btn-rounded">
-                  Sign up!
-                </button>
-              </p>
-            </section>
-            <!-- Section: CTA -->
-          </div>
-          <div
-            class="text-center p-3"
-            style="background-color: rgba(133, 41, 16, 0.755)"
-          >
-            <p className="text-center text-muted " id="footer-text">
-              <!--Text will be added using js -->
+    <!--Footer :-->
+    <div class="custom-nav mt-5">
+      <footer class="text-center text-white" style="background-color: black">
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <div>
+            <p class="d-flex justify-content-center align-items-center">
+              <span class="me-3 mr-3">Register for free :</span>
+              <button type="button" class="btn btn-outline-light btn-rounded">
+                Sign up!
+              </button>
             </p>
           </div>
-        </footer>
-      </section>
-    </footer>
+        </div>
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(133, 41, 16, 0.755)"
+        >
+          <p class="text-center" id="footer-text" style="color: white">
+            <!--Text will be added using js -->
+          </p>
+        </div>
+      </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
