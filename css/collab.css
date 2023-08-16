@@ -21,9 +21,9 @@ footer {
 /*Caroussel style : */
 
 #carouselExampleIndicators {
-  width: 50%;  /* adjust to your needs */
-  height: 80%; /* adjust to your needs */
-  margin: 0 auto; /* this will center the carousel if it has a specified width */
+  width: 50%;
+  height: 80%;
+  margin: 0 auto;
 }
 
 #carouselExampleIndicators .carousel-item img {
@@ -37,7 +37,6 @@ footer {
   height: 300px;
   width: 250px;
 }
-
 
 .card:hover,
 .card:focus,
@@ -53,18 +52,18 @@ footer {
 }
 
 .text-center.mt-5.mb-5 h2 {
-  color: rgba(133, 41, 16, 0.755); 
-  letter-spacing: 25px; 
-  word-spacing: 60px;  
-  font-weight: bold;   
+  color: rgba(133, 41, 16, 0.755);
+  letter-spacing: 25px;
+  word-spacing: 60px;
+  font-weight: bold;
   text-transform: uppercase;
-  overflow-wrap: break-word; 
-  max-width: 100%; 
+  overflow-wrap: break-word;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 
 .text-center.mt-5.mb-5 p {
-  color: #7F8C8D;  
-  font-size: 1.1em; 
-  letter-spacing: 3px; 
+  color: #7f8c8d;
+  font-size: 1.1em;
+  letter-spacing: 3px;
 }

@@ -131,23 +131,29 @@ const items = [
     img: "../img/Converse/converse4.jpg",
     price: "650",
     category: "Converse",
-  }
+  },
 ];
 
+// Get the button and items containers from the DOM
 const buttonContainer = document.querySelector(".button-container");
 const itemsContainer = document.getElementById("items-container");
 
 window.onload = function () {
+  // Extract unique categories from the items array, adding an "All" category at the start
   const categories = ["All", ...new Set(items.map((item) => item.category))];
 
+  // Create filter buttons for each category
   categories.forEach((category) => {
     const button = document.createElement("button");
     button.className = "btn btn-secondary btn-lg m-2";
     button.textContent = category;
     buttonContainer.appendChild(button);
+
     button.addEventListener("click", function () {
-      itemsContainer.innerHTML = "";
+      itemsContainer.innerHTML = ""; // Clear current items displayed
       let itemsToDisplay;
+
+      // Decide which items to display based on the selected category
       if (category === "All") {
         itemsToDisplay = items;
       } else {
@@ -157,18 +163,21 @@ window.onload = function () {
     });
   });
 
+  // Display all items by default on page load
   displayItems(items);
 };
 
+// Function to display a given array of items on the page
 function displayItems(itemsToDisplay) {
   itemsToDisplay.forEach((item) => {
+    // Create DOM elements for each item's properties and structure
     const itemCard = document.createElement("div");
     itemCard.className = "card m-5";
 
     const itemImage = document.createElement("img");
     itemImage.src = item.img;
     itemImage.className = "card-img-top";
-    itemImage.id="itemImg"
+    itemImage.id = "itemImg";
 
     const cardBody = document.createElement("div");
     cardBody.className = "card-body text-center";
@@ -185,6 +194,7 @@ function displayItems(itemsToDisplay) {
     buyButton.textContent = "Grab yours";
     buyButton.className = "btn btn-dark mt-2";
 
+    // Append the individual elements to their respective parents
     cardBody.append(itemTitle, itemPrice, buyButton);
     itemCard.append(itemImage, cardBody);
     itemsContainer.appendChild(itemCard);
