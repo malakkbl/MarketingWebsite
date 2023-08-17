@@ -38,3 +38,22 @@ var countdownInterval = setInterval(function () {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+// Sign up form :
+$(document).ready(function () {
+  $(".btn-primary").on("click", function (e) {
+    e.preventDefault(); // Prevent default button action
+
+    var pwd = $('[name="psw"]').val();
+    var repeatPwd = $('[name="psw-repeat"]').val();
+
+    // Check if passwords match
+    if (pwd !== repeatPwd) {
+      alert("Passwords do not match!");
+      return false;
+    } else {
+      alert("Thank you for signing up!");
+      $(".modal-form-content")[0].reset();
+    }
+  });
+});

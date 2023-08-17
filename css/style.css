@@ -65,7 +65,7 @@ footer {
 
 /* Sign up form : */
 .modal-header .logo {
-  max-width: 50px;
+  max-width: 100px;
   margin-right: 10px;
 }
 
@@ -76,3 +76,11 @@ footer {
 .modal-footer {
   flex-wrap: nowrap;
 }
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
