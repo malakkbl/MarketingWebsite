@@ -128,9 +128,14 @@
             <!-- Section: CTA -->
             <div>
               <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3 mr-3">Register for free :</span>
-                <button type="button" class="btn btn-outline-light btn-rounded">
-                  Sign up!
+                <span class="me-3 mr-3">Where every step has style and every style has its rhythm :</span>
+                <button
+                  type="button"
+                  class="btn btn-outline-light btn-rounded"
+                  data-toggle="modal"
+                  data-target="#chooseActionModal"
+                >
+                  Join the groove
                 </button>
               </p>
             </div>
@@ -147,7 +152,7 @@
       </div>
     </div>
 
-    <!-- Modal structure :-->
+    <!-- Modal structure log in/sign up :-->
     <div
       class="modal fade"
       id="chooseActionModal"
@@ -236,20 +241,21 @@
                     <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
                   </p>
                   <div class="modal-footer d-flex justify-content-between">
-                    <button
-                      type="button"
-                      class="btn btn-dark cancelbutton"
-                    >
+                    <button type="button" class="btn btn-dark cancelbutton">
                       Cancel
                     </button>
-                    <button type="submit" class="btn btn-secondary" id="signupbutton">
+                    <button
+                      type="submit"
+                      class="btn btn-secondary"
+                      id="signupbutton"
+                    >
                       Sign Up
                     </button>
                   </div>
                 </form>
               </div>
             </div>
-          
+
             <div id="loginForm" style="display: none">
               <div class="modal-header">
                 <h5 class="modal-title" id="longinModalLabel">Log In</h5>
@@ -257,7 +263,11 @@
               <div class="modal-body d-flex flex-column align-items-start">
                 <p>Please fill in this form to log in to your account:</p>
                 <hr />
-                <form class="modal-form-content" action="/action_page.php" id="loginFormContent">
+                <form
+                  class="modal-form-content"
+                  action="/action_page.php"
+                  id="loginFormContent"
+                >
                   <div class="form-group">
                     <label for="email"><b>Your Email</b></label>
                     <input
@@ -280,10 +290,7 @@
                   </div>
 
                   <div class="modal-footer d-flex justify-content-between">
-                    <button
-                      type="button"
-                      class="btn btn-dark cancelbutton"
-                    >
+                    <button type="button" class="btn btn-dark cancelbutton">
                       Cancel
                     </button>
                     <button type="submit" class="btn btn-secondary">
