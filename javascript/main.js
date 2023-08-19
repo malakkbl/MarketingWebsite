@@ -39,17 +39,52 @@ var countdownInterval = setInterval(function () {
   }
 }, 1000);
 
-// Sign up form :
-$(document).ready(function() {
-  $('#signupButton').click(function() {
-      $('.action-container').hide();
-      $('#signupForm').show();
+// Welcome modal :
+$(document).ready(function () {
+  $("#signupButton").click(function () {
+    $(".action-container").hide();
+    $("#signupForm").show();
   });
 
-  $('#loginButton').click(function() {
-    $('.action-container').hide();
-    $('#loginForm').show();
+  $("#loginButton").click(function () {
+    $(".action-container").hide();
+    $("#loginForm").show();
+  });
+});
+
+// Sign up and log in forms :
+
+$(document).ready(function () {
+  $("#signupbutton").on("click", function (e) {
+    e.preventDefault(); // Prevent default button action
+
+    var pwd = $('[name="psw"]').val();
+    var repeatPwd = $('[name="psw-repeat"]').val();
+
+    // Check if passwords match
+    if (pwd !== repeatPwd) {
+      alert("Passwords do not match!");
+      return false;
+    } else {
+      alert("Thank you for signing up!");
+      $("#signupForm").hide();
+      $(".action-container").show();
+    }
   });
 
+  $(".cancelbutton").on("click", function (e) {
+    $("#signupForm").hide();
+    $("#loginForm").hide();
+    $(".action-container").show();
+  });
+
+});
+
+$("#loginFormContent").on("submit", function (e) {
+  e.preventDefault(); 
+
+  alert("Thank you for logging in!");
+  $("#loginForm").hide();
+  $(".action-container").show();
 });
 
