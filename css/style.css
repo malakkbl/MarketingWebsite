@@ -66,21 +66,27 @@ footer {
 /* Sign up and log in modal : */
 .modal-header {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo-container img {
-  max-width: 100px; 
-  margin-bottom: 10px; 
+  max-width: 100px;
+  margin-bottom: 10px;
 }
 
 .action-container {
-  text-align: center; 
-  margin-bottom: 20px; 
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .action-text {
   margin-bottom: 10px;
+}
+.modal-form-content {
+  width: 100%;
+}
+.modal-body {
+  width: 100%;
 }

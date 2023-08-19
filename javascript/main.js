@@ -47,8 +47,8 @@ $(document).ready(function() {
   });
 
   $('#loginButton').click(function() {
-      $('#actionResult').text('You chose to Log In!');
-      $('#chooseActionModal').modal('hide');
+    $('.action-container').hide();
+    $('#loginForm').show();
   });
 
 });
