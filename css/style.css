@@ -63,24 +63,24 @@ footer {
   margin: 0 auto;
 }
 
-/* Sign up form : */
-.modal-header .logo {
-  max-width: 100px;
-  margin-right: 10px;
-}
-
-.modal-body .modal-form-content {
-  width: 100%;
-}
-
-.modal-footer {
-  flex-wrap: nowrap;
-}
-
-.modal-content {
+/* Sign up and log in modal : */
+.modal-header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column; 
 }
 
+.logo-container img {
+  max-width: 100px; 
+  margin-bottom: 10px; 
+}
+
+.action-container {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.action-text {
+  margin-bottom: 10px;
+}
