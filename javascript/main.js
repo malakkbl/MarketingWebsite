@@ -56,7 +56,12 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#signupbutton").on("click", function (e) {
-    e.preventDefault(); // Prevent default button action
+    var form = $("#signupbutton").closest("form"); 
+
+    if (!form[0].checkValidity()) {
+      form[0].reportValidity(); 
+      return;
+    }
 
     var pwd = $('[name="psw"]').val();
     var repeatPwd = $('[name="psw-repeat"]').val();
@@ -66,9 +71,9 @@ $(document).ready(function () {
       alert("Passwords do not match!");
       return false;
     } else {
+      e.preventDefault(); 
       alert("Thank you for signing up!");
       $("#signupForm").hide();
-      $(".action-container").show();
     }
   });
 
@@ -77,14 +82,11 @@ $(document).ready(function () {
     $("#loginForm").hide();
     $(".action-container").show();
   });
-
 });
 
 $("#loginFormContent").on("submit", function (e) {
-  e.preventDefault(); 
+  e.preventDefault();
 
   alert("Thank you for logging in!");
   $("#loginForm").hide();
-  $(".action-container").show();
 });
-
