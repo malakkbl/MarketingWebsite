@@ -56,10 +56,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#signupbutton").on("click", function (e) {
-    var form = $("#signupbutton").closest("form"); 
+    var form = $("#signupbutton").closest("form");
 
     if (!form[0].checkValidity()) {
-      form[0].reportValidity(); 
+      form[0].reportValidity();
       return;
     }
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
       alert("Passwords do not match!");
       return false;
     } else {
-      e.preventDefault(); 
+      e.preventDefault();
       alert("Thank you for signing up!");
       $("#signupForm").hide();
     }
