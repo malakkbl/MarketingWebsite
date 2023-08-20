@@ -18,6 +18,7 @@ $(document).ready(function () {
 // Sign up and log in forms :
 
 $(document).ready(function () {
+  // Sign up button action :
   $("#signupbutton").on("click", function (e) {
     var form = $("#signupbutton").closest("form");
 
@@ -40,6 +41,7 @@ $(document).ready(function () {
     }
   });
 
+  // Cancel button action :
   $(".cancelbutton").on("click", function (e) {
     $("#signupForm").hide();
     $("#loginForm").hide();
@@ -47,6 +49,7 @@ $(document).ready(function () {
   });
 });
 
+// Log in button action :
 $("#loginFormContent").on("submit", function (e) {
   e.preventDefault();
 
