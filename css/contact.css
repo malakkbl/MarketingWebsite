@@ -28,3 +28,19 @@ main {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+/* Link part : */
+.link{
+    height: 120px;
+}
+
+.container a {
+    color: #333;  
+    text-decoration: none; 
+    transition: color 0.3s;  
+}
+
+.container a:hover {
+    color: rgba(133, 41, 16, 0.755);
+    text-decoration: underline;
+}
