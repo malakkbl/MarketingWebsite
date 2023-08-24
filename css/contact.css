@@ -22,25 +22,32 @@ main {
 }
 
 /* Contact form :*/
-  .bg-image {
-    background-image: url("/img/back.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.bg-image {
+  background-image: url("/img/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* Link part : */
-.link{
-    height: 120px;
+.link {
+  height: 120px;
 }
 
 .container a {
-    color: #333;  
-    text-decoration: none; 
-    transition: color 0.3s;  
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .container a:hover {
-    color: rgba(133, 41, 16, 0.755);
-    text-decoration: underline;
+  color: rgba(133, 41, 16, 0.755);
+  text-decoration: underline;
+}
+
+/* Aligned to the bottom : */
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

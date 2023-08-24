@@ -310,7 +310,10 @@
           <!-- Section: CTA -->
           <div>
             <p class="d-flex justify-content-center align-items-center">
-              <span class="me-3 mr-3">Where every step has style and every style has its rhythm :</span>
+              <span class="me-3 mr-3"
+                >Where every step has style and every style has its rhythm
+                :</span
+              >
               <button
                 type="button"
                 class="btn btn-outline-light btn-rounded"
@@ -326,170 +329,173 @@
           class="text-center p-3"
           style="background-color: rgba(133, 41, 16, 0.755)"
         >
-        <div class="d-flex justify-content-center mb-3">
-          <a href="/pages/contact.html" type="button" class="btn btn-outline-light btn-rounded">Contact us !</a>
-      </div>
+          <div class="d-flex justify-content-center mb-3">
+            <a
+              href="/pages/contact.html"
+              class="btn btn-outline-light btn-rounded"
+              >Contact us !</a
+            >
+          </div>
           <p class="text-center" id="footer-text" style="color: white">
             <!--Text will be added using js -->
           </p>
         </div>
       </footer>
     </div>
-  </div>
 
-  <!-- Modal structure log in/sign up :-->
-  <div
-    class="modal fade"
-    id="chooseActionModal"
-    tabindex="-1"
-    aria-labelledby="chooseActionModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="logo-container">
-            <img
-              src="/img/Grooving.png"
-              alt="Grooving Logo"
-              id="groovingLogo"
-            />
-          </div>
-          <h5 class="modal-title" id="chooseActionModalLabel">
-            Welcome or welcome back to Grooving!
-          </h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <!-- Welcoming part :-->
-          <div class="action-container">
-            <p class="action-text">Are you new to the Grooving community?</p>
-            <button type="button" class="btn btn-secondary" id="signupButton">
-              Sign Up
+    <!-- Modal structure log in/sign up :-->
+    <div
+      class="modal fade"
+      id="chooseActionModal"
+      tabindex="-1"
+      aria-labelledby="chooseActionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="logo-container">
+              <img
+                src="/img/Grooving.png"
+                alt="Grooving Logo"
+                id="groovingLogo"
+              />
+            </div>
+            <h5 class="modal-title" id="chooseActionModalLabel">
+              Welcome or welcome back to Grooving!
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
 
-          <div class="action-container">
-            <p class="action-text">Already in the Grooving community?</p>
-            <button type="button" class="btn btn-secondary" id="loginButton">
-              Log In
-            </button>
-          </div>
-
-          <!-- Sign up part :-->
-          <div id="signupForm" style="display: none">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+          <div class="modal-body">
+            <!-- Welcoming part :-->
+            <div class="action-container">
+              <p class="action-text">Are you new to the Grooving community?</p>
+              <button type="button" class="btn btn-secondary" id="signupButton">
+                Sign Up
+              </button>
             </div>
-            <div class="modal-body d-flex flex-column align-items-start">
-              <p>Please fill in this form to create an account:</p>
-              <hr />
-              <form class="modal-form-content" action="/action_page.php">
-                <div class="form-group">
-                  <label for="email"><b>Your Email</b></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="psw"><b>Create Password</b></label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="psw"
-                    id="psw"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="psw"><b>Repeat Password</b></label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="psw-repeat"
-                    id="psw-repeat"
-                    required
-                  />
-                </div>
-                <p>
-                  By creating an account you agree to our
-                  <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
-                </p>
-                <div class="modal-footer d-flex justify-content-between">
-                  <button type="button" class="btn btn-dark cancelbutton">
-                    Cancel
-                  </button>
-                  <button
-                    type="submit"
-                    class="btn btn-secondary"
-                    id="signupbutton"
-                  >
-                    Sign Up
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
 
-          <!-- Log in part :-->
-          <div id="loginForm" style="display: none">
-            <div class="modal-header">
-              <h5 class="modal-title" id="longinModalLabel">Log In</h5>
+            <div class="action-container">
+              <p class="action-text">Already in the Grooving community?</p>
+              <button type="button" class="btn btn-secondary" id="loginButton">
+                Log In
+              </button>
             </div>
-            <div class="modal-body d-flex flex-column align-items-start">
-              <p>Please fill in this form to log in to your account:</p>
-              <hr />
-              <form
-                class="modal-form-content"
-                action="/action_page.php"
-                id="loginFormContent"
-              >
-                <div class="form-group">
-                  <label for="email"><b>Your Email</b></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="psw"><b>Your Password</b></label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="psw"
-                    required
-                  />
-                </div>
 
-                <div class="modal-footer d-flex justify-content-between">
-                  <button type="button" class="btn btn-dark cancelbutton">
-                    Cancel
-                  </button>
-                  <button type="submit" class="btn btn-secondary">
-                    Log In
-                  </button>
-                </div>
-              </form>
+            <!-- Sign up part :-->
+            <div id="signupForm" style="display: none">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+              </div>
+              <div class="modal-body d-flex flex-column align-items-start">
+                <p>Please fill in this form to create an account:</p>
+                <hr />
+                <form class="modal-form-content" action="/action_page.php">
+                  <div class="form-group">
+                    <label for="email"><b>Your Email</b></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="psw"><b>Create Password</b></label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="psw"
+                      id="psw"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="psw"><b>Repeat Password</b></label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="psw-repeat"
+                      id="psw-repeat"
+                      required
+                    />
+                  </div>
+                  <p>
+                    By creating an account you agree to our
+                    <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+                  </p>
+                  <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark cancelbutton">
+                      Cancel
+                    </button>
+                    <button
+                      type="submit"
+                      class="btn btn-secondary"
+                      id="signupbutton"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Log in part :-->
+            <div id="loginForm" style="display: none">
+              <div class="modal-header">
+                <h5 class="modal-title" id="longinModalLabel">Log In</h5>
+              </div>
+              <div class="modal-body d-flex flex-column align-items-start">
+                <p>Please fill in this form to log in to your account:</p>
+                <hr />
+                <form
+                  class="modal-form-content"
+                  action="/action_page.php"
+                  id="loginFormContent"
+                >
+                  <div class="form-group">
+                    <label for="email"><b>Your Email</b></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="psw"><b>Your Password</b></label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="psw"
+                      required
+                    />
+                  </div>
+
+                  <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-dark cancelbutton">
+                      Cancel
+                    </button>
+                    <button type="submit" class="btn btn-secondary">
+                      Log In
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
