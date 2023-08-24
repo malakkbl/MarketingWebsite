@@ -72,10 +72,12 @@
                   <div class="col-sm-6 p-4">
                     <div class="text-center">
                       <div class="h3 fw-light">Contact Form</div>
-                      <p class="mb-4 text-muted">Share your vibes! We're listening.</p>
+                      <p class="mb-4 text-muted">
+                        Share your vibes! We're listening.
+                      </p>
                     </div>
 
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form id="contactForm">
                       <!-- Name Input -->
                       <div class="form-floating mb-3">
                         <input
@@ -83,14 +85,8 @@
                           id="name"
                           type="text"
                           placeholder="Name"
-                          data-sb-validations="required"
+                          required
                         />
-                        <div
-                          class="invalid-feedback"
-                          data-sb-feedback="name:required"
-                        >
-                          Name is required.
-                        </div>
                       </div>
 
                       <!-- Email Input -->
@@ -100,20 +96,8 @@
                           id="emailAddress"
                           type="email"
                           placeholder="Email Address"
-                          data-sb-validations="required,email"
+                          required
                         />
-                        <div
-                          class="invalid-feedback"
-                          data-sb-feedback="emailAddress:required"
-                        >
-                          Email Address is required.
-                        </div>
-                        <div
-                          class="invalid-feedback"
-                          data-sb-feedback="emailAddress:email"
-                        >
-                          Email Address Email is not valid.
-                        </div>
                       </div>
 
                       <!-- Message Input -->
@@ -121,17 +105,10 @@
                         <textarea
                           class="form-control"
                           id="message"
-                          type="text"
                           placeholder="Message"
                           style="height: 10rem"
-                          data-sb-validations="required"
+                          required
                         ></textarea>
-                        <div
-                          class="invalid-feedback"
-                          data-sb-feedback="message:required"
-                        >
-                          Message is required.
-                        </div>
                       </div>
 
                       <!-- Submit button -->
