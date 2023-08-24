@@ -20,3 +20,11 @@ footer {
 main {
   flex-grow: 1;
 }
+
+/* Contact form :*/
+  .bg-image {
+    background-image: url("/img/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
